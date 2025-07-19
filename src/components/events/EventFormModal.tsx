@@ -15,7 +15,11 @@ interface Event {
     enabled: boolean
     minutes: number
   };
-  repeat?: RepeatConfig;
+  repeat?: {
+    type: 'daily' | 'weekly' | 'monthly',
+    endDate: Date,
+    dates: Date[]
+  }
 }
 
 interface Category {
