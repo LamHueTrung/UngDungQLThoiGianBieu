@@ -13,7 +13,7 @@ RUN npm install --legacy-peer-deps
 COPY . .
 
 # Build the application (skip for dev mode)
-RUN npm run build
+# RUN npm run build
 
 # Create non-root user
 RUN addgroup -g 1001 -S nodejs
