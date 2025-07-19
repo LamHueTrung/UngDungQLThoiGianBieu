@@ -176,7 +176,6 @@ const CategoryForm: React.FC<CategoryFormProps> = ({
               <input
                 type="color"
                 value={selectedColor}
-                onChange={(e) => handleColorSelect(e.target.value)}
                 className="w-8 h-8 rounded border border-border cursor-pointer"
                 disabled={loading}
               />
