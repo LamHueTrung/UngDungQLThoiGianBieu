@@ -13,6 +13,7 @@ interface RegisterFormProps {
   onSwitchToLogin: () => void
   loading?: boolean
   className?: string
+  error?: string | null;
 }
 
 const RegisterForm: React.FC<RegisterFormProps> = ({
