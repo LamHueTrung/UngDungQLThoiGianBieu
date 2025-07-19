@@ -14,7 +14,8 @@ interface Event {
   reminder?: {
     enabled: boolean
     minutes: number
-  }
+  };
+  repeat?: RepeatConfig;
 }
 
 interface Category {
